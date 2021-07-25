@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Todo app</title>
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div class="heading">
+    <div class="appname">
+      <h1 class="brandname">TODO</h1>
+      <img class='theme-switch' src="images/icon-sun.svg" alt="">
+    </div>
+    <div class="addnew text-boxes">
+      <button class="check"></button>
+      <input  class="input" type="text" placeholder="create new todo...">
+      <!-- <img src="images/icon-check.svg" alt=""> -->
+      <i onclick= "getTodo()"  class="fas fa-check"></i>
+    </div>
+  </div>
+
+  <div class="pendingtodo">
+    <div class="list">
+
+
+
+    </div>
+    <div class="text-boxes status task">
+      <p><span>*</span> items left</p>
+      <div class="text-boxes filter-mobile filter-pc">
+        <p class=filter>All</p>
+        <p class=filter>Active</p>
+        <p class=filter>Completed</p>
+      </div>
+      <button>Clear Completed</button>
+    </div>
+  </div>
+
+  <div class="text-boxes filter-mobile" id="filters">
+    <p class=filter>All</p>
+    <p class=filter>Active</p>
+    <p class=filter>Completed</p>
+  </div>
+
+  
+  
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>;
+  <script src="script.js"></script>;
+</html>
